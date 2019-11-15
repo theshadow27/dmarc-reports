@@ -33,7 +33,7 @@ Which will allow the script to process inbound emails. Once you are convinced it
 is working, you can add another step to discard matching messages and stop 
 processing rules. 
 
-<< img >>
+![Cpanel Mail Setup Screenshot](https://raw.githubusercontent.com/{user}/{repo}/assets/docs/filter_setup.png)
 
 
 == (2) demarker.php ==
