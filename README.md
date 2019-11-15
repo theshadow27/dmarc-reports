@@ -1,4 +1,4 @@
-= SIMPLE DMARC AGGREGATOR =
+# SIMPLE DMARC AGGREGATOR #
 
 The Simple DMARC Aggregator (SDA) is a collection of PHP scripts which process 
 RFC7489 ( https://tools.ietf.org/html/rfc7489 ) DMARC feedback messages. It is
@@ -8,7 +8,7 @@ filtering - though it could probably be repurposed for other tasks...
 
 There are three components to the collection:
 
-== (1) demime.php ==
+## (1) demime.php ##
 
 This script reads an email (MIME) message from standard input (STDIN), as piped
 by the CPanel mail filter system. It parses the message and looks for indicators
@@ -36,7 +36,7 @@ processing rules.
 ![Cpanel Mail Setup Screenshot](docs/filter_setup.png)
 
 
-== (2) demarker.php ==
+## (2) demarker.php ##
 
 This script provides GET-based querying of the temporary files stored by demime.
 Assuming this code is deployed to 'public_html/dmarc-reports', you can ask for 
@@ -54,7 +54,7 @@ or `true` (or omitted or anything) skips records without errors
 see https://www.php.net/manual/en/datetime.formats.relative.php for supported 
 formats. 
 
-== (3) dmarccron.php ==
+## (3) dmarccron.php ##
 
 **TODO** 
 
